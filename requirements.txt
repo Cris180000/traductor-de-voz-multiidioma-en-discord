@@ -1,0 +1,32 @@
+# Voice Translator Discord - Dependencias
+# Instalar con: pip install -r requirements.txt
+
+# Transcripción local (Whisper — sin coste, sin internet)
+openai-whisper
+
+# PyTorch CPU — instalar ANTES que el resto con:
+# pip install torch --index-url https://download.pytorch.org/whl/cpu
+
+# Captura de audio
+pyaudio
+sounddevice
+numpy
+
+# Traducción (NO usar googletrans 3.x — inestable)
+deep_translator
+
+# TTS con voz clonada
+requests     # Llamadas a API ElevenLabs
+pygame       # Reproducción de audio MP3
+
+# Variables de entorno
+python-dotenv
+
+# Detección de voz / silencio (Fase 2)
+webrtcvad
+
+# Atajos de teclado globales (Fase 3)
+keyboard
+
+# SaaS — base de datos de usuarios (Fase SaaS)
+# supabase
